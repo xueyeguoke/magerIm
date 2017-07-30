@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title><%= title %></title>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/2.0.0-beta.17/angular2.js"></script>
+
+    <script src="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="//cdn.bootcss.com/layer/3.0.1/layer.js"></script>
+    <style>
+      body{
+          margin-left:auto;
+          margin-right:auto;
+          margin-TOP:100PX;
+          width:20em;
+      }
+    </style>
+</head>
+<body>
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input id="userName" type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon1">
+</div>
+<br>
+<!--下面是密码输入框-->
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input id="passWord" type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+</div>
+<br>
+<!--下面是登陆按钮,包括颜色控制-->
+<button type="button" style="width:320px;" class="btn btn-default">登 录</button>
+</body>
+</html>

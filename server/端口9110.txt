@@ -1,0 +1,13 @@
+页面服务器端口9110
+bin/www
+var port = normalizePort(process.env.PORT || '9110');
+
+websocket
+9301端口
+websocket.js
+npm install ws
+
+mysql服务器
+localhost:9201
+username root
+pwd为空

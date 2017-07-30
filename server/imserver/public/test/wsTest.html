@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <head>
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap-grid.min.css" rel="stylesheet">
+        <title>WebSocket</title>
+    </head>
+    <body>
+    <div id="msg">websocket测试页</div>
+        <script>
+            var divMsg=document.getElementById("msg");
+            var onOpen = function(event){
+                console.log('Socket opened. readyState:'+socket.readyState);
+                var msg = {
+                    type: "message",
+                    text: "something",
+                    id: "number",
+                    time: Date.now()
+                };
+                //send�������̨�����ַ�����Blob��ArrayBuffer���̴������ʱ������JSON�������л�
+                socket.send(JSON.stringify(msg));
+            };
+            var onClose = function(event){
+                console.log('Socket closed.readyState:'+socket.readyState);
+                console.log('Connected to: ' + event.currentTarget.url);
+                divMsg.innerHTML+="<br>";
+                divMsg.innerHTML+='Socket closed.readyState:'+socket.readyState;
+                divMsg.innerHTML+="<br>";
+                divMsg.innerHTML+='Connected to: ' + event.currentTarget.url;
+            };
+            var onMessage = function(data){
+                console.log("We get signal:");
+                console.log(data);
+                console.log('onMessageready: ' + socket.readyState);
+                divMsg.innerHTML+="<br>"+"We get signal:";
+                divMsg.innerHTML+="<br>"+'onMessageready: ' + socket.readyState;
+            };
+            var onError = function(event){
+                console.log("We got an error.: " + event.data);
+                divMsg.innerHTML+="<br>"+"We got an error.: " + event.data;
+            };
+            var socket = new WebSocket('ws://127.0.0.1:8080/ddtTest');
+            socket.onopen = onOpen;
+            socket.onclose = onClose;
+            socket.onerror = onError;
+            socket.onmessage = onMessage;
+        </script>
+    </body>
+</html>

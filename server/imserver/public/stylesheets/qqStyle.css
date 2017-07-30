@@ -1,0 +1,80 @@
+﻿html,body,div,iframe,dl,dt,dd,p{margin:0;padding:0}
+body{font:12px/1.5 tahoma,helvetica,clean;overflow:hidden}
+a{text-decoration:none;color:#2A86E2;outline:none}
+.fl{float:left}
+.chat-box{width:600px;height:486px;margin:0 auto;position:relative}
+.outer_border{border:1px solid #A6A7A6;border-radius:5px}
+.chat-header{height:62px;background:url(/CustomService/img/login_header.png) repeat-y;position:relative;overflow:hidden;color:#FFF;font-family:"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53"}
+.chat-header:after{clear:both;content:' ';display:block;height:0}
+.chat-useritem{height:62px;background:url(/CustomService/img/login_header_2.png) repeat-y;position:relative;overflow:hidden;color:#FFF;font-family:"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53"}
+.chat-useritem:after{clear:both;content:' ';display:block;height:0}
+.chat-useritem_active{height:62px;background:url(/CustomService/img/login_header.png) repeat-y;position:relative;overflow:hidden;color:#FFF;font-family:"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53"}
+.chat-useritem_active:after{clear:both;content:' ';display:block;height:0}
+.chat-useritem_flash{height:62px;background:url(/CustomService/img/login_header_3.png) repeat-y;position:relative;overflow:hidden;color:#FFF;font-family:"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53"}
+.chat-useritem_flash:after{clear:both;content:' ';display:block;height:0}
+.uin-info{float:left}
+.uin-info .avator{width:40px;height:40px;border:1px solid #EEE;border-radius:5px;margin:10px;float:left}
+.avator img{border-radius:5px}
+.uin-info .nick-and-status{float:left}
+.uin-info .nick-and-status .nick-uin{margin:8px 0 2px 0;font-size:17px}
+.user-info{float:right;margin:10px 10px 0 0}
+.user-info a{margin-left:10px;color:#FFF;border-bottom:1px solid}
+.chat-body{float:left;width:400px;border-right:1px solid #D4DCDF}
+.chat-logs{height:265px;overflow-x:hidden;overflow-y:auto}
+.chat-logs .offline-tips{display:none;height:17px;color:#555;background-color:#E7ECEE;padding:5px}
+.chat-logs .offline-tips #offline-icon{float:left;width:14px;height:14px;margin:4px 6px;background-image:url(/CustomService/img/chatbutton.png);background-position:-72px 0}
+.chat-logs .offline-tips a#tips-close{display:block;float:right;height:9px;width:9px;margin:5px 5px 0 0;background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -17px;background-repeat:no-repeat}
+.chat-logs .offline-tips a#tips-close:hover{background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -34px}
+.chat-logs .offline-tips a#tips-close:active{background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -51px}
+.chat-logs .info-tips{clear:both;color:#7C7C7C;padding:6px}
+.chat-logs .info-tips #info-icon{float:left;width:14px;height:15px;margin:2px 5px;background-image:url(/CustomService/img/chatbutton.png);background-position:-89px 0}
+.chat-logs dl{color:#007AF9;margin:10px 0 10px 10px}
+.chat-logs .my-msg{color:#48C782}
+.chat-logs .warnTip,.chat-logs .warnTip dd{color:#505050}
+.chat-logs dt .warn-icon{float:left;width:16px;height:16px;background-image:url(/CustomService/img/chatbutton.png);background-position:-89px -17px}
+.chat-logs dd{padding-left:1em;color:#000;width:360px;word-break:break-all}
+
+.chat-history{height:400px;overflow-x:hidden;overflow-y:auto}
+.chat-history .offline-tips{display:none;height:17px;color:#555;background-color:#E7ECEE;padding:5px}
+.chat-history .offline-tips #offline-icon{float:left;width:14px;height:14px;margin:4px 6px;background-image:url(/CustomService/img/chatbutton.png);background-position:-72px 0}
+.chat-history .offline-tips a#tips-close{display:block;float:right;height:9px;width:9px;margin:5px 5px 0 0;background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -17px;background-repeat:no-repeat}
+.chat-history .offline-tips a#tips-close:hover{background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -34px}
+.chat-history .offline-tips a#tips-close:active{background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -51px}
+.chat-history .info-tips{clear:both;color:#7C7C7C;padding:6px}
+.chat-history .info-tips #info-icon{float:left;width:14px;height:15px;margin:2px 5px;background-image:url(/CustomService/img/chatbutton.png);background-position:-89px 0}
+.chat-history dl{color:#007AF9;margin:10px 0 10px 10px}
+.chat-history .my-msg{color:#48C782}
+.chat-history .warnTip,.chat-history .warnTip dd{color:#505050}
+.chat-history dt .warn-icon{float:left;width:16px;height:16px;background-image:url(/CustomService/img/chatbutton.png);background-position:-89px -17px}
+.chat-history dd{padding-left:1em;color:#000;width:160px;word-break:break-all}
+
+.chat-userlist{height:520px;overflow-x:hidden;overflow-y:auto}
+.chat-userlist .offline-tips{display:none;height:17px;color:#555;background-color:#E7ECEE;padding:5px}
+.chat-userlist .offline-tips #offline-icon{float:left;width:14px;height:14px;margin:4px 6px;background-image:url(/CustomService/img/chatbutton.png);background-position:-72px 0}
+.chat-userlist .offline-tips a#tips-close{display:block;float:right;height:9px;width:9px;margin:5px 5px 0 0;background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -17px;background-repeat:no-repeat}
+.chat-userlist .offline-tips a#tips-close:hover{background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -34px}
+.chat-userlist .offline-tips a#tips-close:active{background-image:url(/CustomService/img/chatbutton.png);background-position:-72px -51px}
+.chat-userlist .info-tips{clear:both;color:#7C7C7C;padding:6px}
+.chat-userlist .info-tips #info-icon{float:left;width:14px;height:15px;margin:2px 5px;background-image:url(/CustomService/img/chatbutton.png);background-position:-89px 0}
+.chat-userlist dl{color:#007AF9;margin:10px 0 10px 10px}
+.chat-userlist .my-msg{color:#48C782}
+.chat-userlist .warnTip,.chat-userlist .warnTip dd{color:#505050}
+.chat-userlist dt .warn-icon{float:left;width:16px;height:16px;background-image:url(/CustomService/img/chatbutton.png);background-position:-89px -17px}
+.chat-userlist dd{padding-left:1em;color:#000;width:160px;word-break:break-all}
+
+.edit-tools{height:27px;background:url(/CustomService/img/tools_bg.png) repeat-y}
+.chat-faces{width:436px;height:204px;overflow:hidden;background:url(/CustomService/img/face.gif) no-repeat;position:absolute;z-index:1000;top:115px;left:1px;display:none}
+.chat-faces .face-icon{display:block;float:left;width:28px;height:28px;margin:1px 0 0 1px;overflow:hidden;cursor:default}
+.chat-faces .face-icon:hover{display:block;float:left;border:1px solid blue;width:27px;height:27px;margin:1px 0 0 1px;overflow:hidden;cursor:default}
+.edit-tools .tool-face{background:url(/CustomService/img/eqq_sprite_png.png) no-repeat -20px -60px;width:20px;height:20px;display:inline-block;*display:inline;*zoom:1;margin:3px 0 0 7px;border:1px solid transparent}
+.edit-tools .tool-face:hover{border:1px solid #848F97}
+.edit-box{outline:0 none;height:95px;padding:5px 0 0 5px;overflow-x:hidden;overflow-y:auto;word-break:break-all;word-wrap:break-word;font-size:14px;cursor:text}
+.edit-box img{vertical-align:text-bottom;width:24px;height:24px}
+.chat-btns{height:30px;background-color:#E7ECEE;border-top:1px solid #E1E5E7;position:relative}
+.chat-btns em{font-style:normal;color:#3F3F3F;margin-left:10px;line-height:33px}
+.chat-btns a{color:#000;position:absolute;width:69px;height:22px;line-height:22px;top:6px;text-align:center;background-image:url(/CustomService/img/chatbutton.png);background-position:0 -25px}
+.chat-btns a:hover{background-image:url(/CustomService/img/chatbutton.png);background-position:0 -48px}
+.chat-btns a:active{background-image:url(/CustomService/img/chatbutton.png);background-position:0 0}
+.chat-btns .close-box{right:95px}
+.chat-btns .send-msg{right:18px}
+.info-card{float:left}
